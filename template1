@@ -1,0 +1,13 @@
+#Template 1, example file
+#
+# '#' is comment line symbol
+# '<<' indicates begin template phrase for previous text
+# '>>' indicates begin template phrase for for following text
+# '~'  indicates input ref
+# '$'  indicates input value
+<<Ceci est un template comme vous pouvez le voir dans le tableau~.
+>>Dans le tableau~, $ choses sont à remarquer:
+<<Ceci est un template comme vous pouvez le voir dans la figure~.
+>>Dans la figure~, $ choses sont à remarquer:
+>>Ceci est un template pour Guillaume, voir~
+<<Ceci est un test pour Martin

@@ -1,0 +1,50 @@
+#TODO MAKE POSSIBLITY TO HAVE COMMENT ON KEYLINES!!!!
+# '¶' ask for Paragraph sections key, '¶' <= ALTGR + R
+[¶test2]
+#General Config
+Filename = test2.csv
+Output = Experiment/Sub Exp
+Type = Table
+Caption = This is test 2
+Formula = I=I:P=I*U*exp(2)
+#Text Config
+PText = 1@template1
+FText = 1@template1
+Analyse = Max(I):derivative(U)
+
+[LaBBrain]
+#General Config
+Filename = labbrain.py
+Output = Experiment/Sub Exp/SubSub Exp2
+Type = Listing
+Caption = This is LaBBrain.py Source
+#Text Config
+PText = 0@template1
+FText = 0@template1
+
+[test]
+#General Config
+Filename = test.csv:test2.csv
+Output = Experiment/Sub Exp2
+Type = Plot
+Caption = This is test
+Formula = I=I:P=U*I
+;Formula = I=I:P=U*I:A=I/U apply to all equivalent table/plot data!!
+;Is it good to compare only seme type data?
+; Shall it include seperate data style
+;thus you shall manage the formula key :S
+#Text Config
+PText = 0@template1
+FText = 0@template1
+Analyse = TODO
+
+[ImageI]
+#General Config
+Filename = ./Data/test3.png:./Data/test3.png:./Data/test3.png
+Output = Experiment/Sub Exp/SubSub Exp
+Type = Image
+Caption = This is Subfigure plot
+#Text Configw
+PText = 0@template1
+FText = 0@template1
+Analyse = TODO
