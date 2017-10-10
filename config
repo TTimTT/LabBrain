@@ -5,7 +5,7 @@
 Filename = test2.csv
 Output = Experiment/Sub Exp
 Type = Table
-Caption = This is test 2
+Caption = This is test 2 test
 Formula = I=I:P=I*U*exp(2)
 #Text Config
 PText = 1@template1
